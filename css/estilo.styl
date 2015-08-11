@@ -1,0 +1,88 @@
+tam=10px;
+tom=5px;
+body
+	background:#dfe2e2
+nav
+	/*Bordes redondeados*/
+	-webkit-border-radius:tam
+	 /*Para chrome y Safari*/	
+	-moz-border-radius:tam 
+	/*Para Firefox*/
+	-o-border-radius:tam 
+	/*Para Opera*/
+	border-radius:tam 
+	/*El estandar por defecto*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#CCC));
+	/*Degradados*/
+	background-image: -moz-linear-gradient(top center, #FFF, #CCC) 
+	/*Para Firefox*/	
+	background-image: -o-linear-gradient(top, #FFF, #CCC) 
+	/*Para Opera*/	
+	background-image: linear-gradient(top, #FFF, #CCC) 
+	/*El estandar por defecto*/
+	overflow:hidden
+	padding:tam
+	width:100%
+nav ul
+	list-style:none
+	margin:0 tam 0 tam
+	padding:0
+nav ul li
+	/*Bordes redondeados*/
+	-webkit-border-radius:tom 
+	/*Chrome y Safari*/
+	-moz-border-radius:tom 
+	/*Firefox*/
+	-o-border-radius:tom 
+	/*Opera*/
+	border-radius:tom 
+	/*Estandar por defecto*/	
+	float:left
+	font-family:Arial, Helvetica, sans-serif
+	font-size:16px
+	font-weight:bold
+	margin-right:tam
+	text-align:center
+	/*Sombras para texto, los mismos parametros que box-shadow*/
+	text-shadow: 0px 1px 0px #FFF
+	border:1px solid transparent
+nav ul li:hover
+	/*Degradado de fondo*/
+	 background-image: -webkit-gradient(linear, left top, left bottom, from(#FFF), to( #E3E3E3))/*Chrome y Safari*/	
+	 background-image: -moz-linear-gradient(top center, #FFF, #E3E3E3)
+	 /*Firefox*/
+	 background-image: -o-linear-gradient(top, #FFF, #E3E3E3)
+	 /*Opera*/
+	 background-image: linear-gradient(top, #FFF, #E3E3E3)
+	 /*Estandar por defecto*/
+	/*Sombras*/
+	-webkit-box-shadow:  1px -1px 0px #999
+	/*Chrome y Safari*/	
+	-moz-box-shadow:  1px -1px 0px #999
+	/*Firefox*/
+	-o-box-shadow:  1px -1px 0px #999
+	/*Opera*/
+	box-shadow:  1px -1px 0px #999
+	/*Estandar por defecto*/
+	border:1px solid #E3E3E3
+nav ul li a
+	color:#999
+	display:block
+	padding:tam
+	text-decoration:none
+	/*Transiciones*/
+	-webkit-transition: 0.4s linear all	
+	-moz-transition: 0.4s linear all
+	-o-transition: 0.4s linear all
+	transition: 0.4s linear all	
+nav ul li a:hover
+	color:#000
+.centrado-flex
+	display:flex
+	justify-content:space-around
+/*Color Dentro del container */
+.container
+	background-color:white
+/*Color footer*/
+.info
+	background-color:white	
